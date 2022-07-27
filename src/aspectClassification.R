@@ -78,6 +78,7 @@ aspectClassification <- function(masterTable){
         TRUE ~ `Coded Values`
       )
     )
+    
   masterTable$`ASPECT -lookup picker` <- d2$`Coded Values`
   return(masterTable)
 }

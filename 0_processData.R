@@ -16,12 +16,14 @@ lapply(list.files("src", full.names = TRUE), source)
 
 # read in data  -----------------------------------------------------------
 file <- "111 or 112th_SOS_Shipment"
-d1 <- readr::read_csv(paste0("data/",file,".csv"))
-# read in bgbase with text fixes and use this as the input for classification 
+d1 <- readr::read_csv(paste0("data/",file,".csv"))%>%
+  dplyr::filter(!is.na(ACC_NUM))
+
+# # read in bgbase with text fixes and use this as the input for classification 
 # d2 <- readr::read_csv("data/bgbase/BG-Base Export (02-27-2022).csv")
-# d1 <- d2[d2$ACC_NUM %in% d1a$ACC_NUM, ]
-
-
+# d21 <- d2[d2$ACC_NUM %in% d1a$ACC_NUM, ]
+# 
+# 
 
 # master table  --------------------------------------------------------
 masterTable  <- masterTable(d1)
@@ -50,4 +52,4 @@ View(masterTable)
 # eval results ------------------------------------------------------------
 write_csv(masterTable, file = paste0("output/",file, "_classified_"
                                      ,Sys.Date(),".csv"))
-  
+    

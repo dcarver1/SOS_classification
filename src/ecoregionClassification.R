@@ -100,6 +100,7 @@ ecoregionClassification <- function(masterTable){
                 ,"Willamette Valley","Wrangell and St. Elias Mountains"   ,"Wyoming Basin" ,"Yukon Flats"   
                 ,"Yukon-Stikine Highlands/Boreal Mountains and Plateaus" ,"Custom Category")
   
+  
   #loop over all elements as test for an exact match within the data
   for(i in seq_along(d1$ecoReg)){
     val <- d1$ecoReg[i]
@@ -109,7 +110,7 @@ ecoregionClassification <- function(masterTable){
     }else{
       d1$`Coded Values`[i] <- "Custom Category"
     }
-    if(d1$ecoReg[i] == ""){
+    if(d1$ecoReg[i] == "" | is.na(d1$ecoReg[i])){
       d1$`Coded Values`[i] <- NA
     }
   }
