@@ -1,0 +1,28 @@
+{
+    "id": "A1514E14",
+    "path": null,
+    "project_path": null,
+    "type": "object_explorer",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1650647626077.0,
+    "source_on_save": false,
+    "relative_order": 9,
+    "properties": {
+        "id": "445f0de830c44d32a917f3f21f658c1f",
+        "name": "masterTable",
+        "title": "masterTable",
+        "language": "R",
+        "source_window_id": "",
+        "Source": "Source"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 2314861617837602156,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1650647626077,
+    "read_only": false,
+    "read_only_alternatives": []
+}

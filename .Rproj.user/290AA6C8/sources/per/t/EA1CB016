@@ -1,0 +1,26 @@
+{
+    "id": "EA1CB016",
+    "path": "E:/usda/grin/sosShipmentClassificaiton/0_processData.R",
+    "project_path": "0_processData.R",
+    "type": "r_source",
+    "hash": "3489821656",
+    "contents": "",
+    "dirty": false,
+    "created": 1658948059963.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "29,0",
+        "scrollLine": "12"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1658948530,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1658948528614,
+    "read_only": false,
+    "read_only_alternatives": []
+}

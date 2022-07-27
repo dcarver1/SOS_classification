@@ -1,0 +1,28 @@
+{
+    "id": "C0E4F8C8",
+    "path": "E:/usda/grin/sosShipmentClassificaiton/src/soilClassification.R",
+    "project_path": "src/soilClassification.R",
+    "type": "r_source",
+    "hash": "3956116728",
+    "contents": "",
+    "dirty": false,
+    "created": 1649190921469.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "17,11",
+        "scrollLine": "0",
+        "docOutlineVisible": "1",
+        "rmdVisualCollapsedChunks": ""
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1650647328,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1650647327359,
+    "read_only": false,
+    "read_only_alternatives": []
+}
