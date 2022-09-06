@@ -4,7 +4,7 @@
 
 
 # load packages -----------------------------------------------------------
-pacman::p_load(dplyr, readr, stringr, lubridate, tidyr)
+pacman::p_load(dplyr, readr, stringr, lubridate, tidyr, readxl)
 
 # source functions --------------------------------------------------------
 lapply(list.files("src", full.names = TRUE), source)
@@ -16,11 +16,12 @@ lapply(list.files("src", full.names = TRUE), source)
 
 # read in data  -----------------------------------------------------------
 file <- "111 or 112th_SOS_Shipment"
-d1 <- readr::read_csv(paste0("data/",file,".csv"))%>%
+d1 <- readxl::read_excel(paste0("data/",file,".xlsx"))%>%
   dplyr::filter(!is.na(ACC_NUM))
 
 # # read in bgbase with text fixes and use this as the input for classification 
-# d2 <- readr::read_csv("data/bgbase/BG-Base Export (02-27-2022).csv")
+d2 <- readxl::read_excel("data/bgbase/BG-Base Export (02-27-2022).csv")
+View(d2)
 # d21 <- d2[d2$ACC_NUM %in% d1a$ACC_NUM, ]
 # 
 # 

@@ -39,7 +39,9 @@ ecoregionClassification <- function(masterTable){
                 ,"Coastal Plain with Low Tropical Deciduous Forest" ,"Coastal Western Hemlock-Sitka Spruce Forests" 
                 ,"Colorado Plateaus","Columbia Mountains/Northern Rockies"  ,"Columbia Plateau" ,"Cook Inlet" 
                 ,"Copper Plateau"  ,"Coppermine River and Tazin Lake Uplands"  ,"Cross Timbers"  ,"Cypress Upland" 
-                ,"Driftless Area"  ,"East Central Texas Plains"  ,"Eastern Cascades Slopes and Foothills"   
+                ,"Driftless Area"  ,"East Central Texas Plains"  ,"Eastern Cascades Slopes and Foothills" 
+                
+                
                 ,"Eastern Corn Belt Plains"  ,"Eastern Great Lakes Lowlands","Edwards Plateau"
                 ,"Ellesmere and Devon Islands Ice Caps","Ellesmere Mountains and Eureka Hills","Erie Drift Plain"
                 ,"Flint Hills","Foxe Uplands","Great Bear Plains","Gulf of Boothia and Foxe Basin Plains"
