@@ -15,19 +15,19 @@ lapply(list.files("src", full.names = TRUE), source)
 ### 
 
 # read in data  -----------------------------------------------------------
-file <- "111 or 112th_SOS_Shipment"
+file <- "Mystery2_bg"
 d1 <- readxl::read_excel(paste0("data/",file,".xlsx"))%>%
   dplyr::filter(!is.na(ACC_NUM))
 
 # # read in bgbase with text fixes and use this as the input for classification 
-d2 <- readxl::read_excel("data/bgbase/BG-Base Export (02-27-2022).csv")
+d2 <- readxl::read_excel("data/bgbase/bgBase_formated202209.xlsx")
 View(d2)
-# d21 <- d2[d2$ACC_NUM %in% d1a$ACC_NUM, ]
+d21 <- d2[d2$ACC_NUM %in% d1$ACC_NUM, ]
 # 
 # 
 
 # master table  --------------------------------------------------------
-masterTable  <- masterTable(d1)
+masterTable  <- masterTable(d21)
 
 
 # classify aspect ---------------------------------------------------------
@@ -51,6 +51,7 @@ masterTable <- landOwnerClassification(masterTable)
 View(masterTable)
 
 # eval results ------------------------------------------------------------
+# write to csv
 write_csv(masterTable, file = paste0("output/",file, "_classified_"
                                      ,Sys.Date(),".csv"))
     
