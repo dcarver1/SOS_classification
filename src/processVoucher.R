@@ -6,10 +6,10 @@ processVoucher <- function(df){
   # df : columns user 4 and user 5 from sos data
   df1 <- df %>% 
     # user4 seperate on : into name, notes, data 
-    separate(col = "USER4", into = c("name","notes","date1"), sep = ":")
+    separate(col = "IDENTIFIED_BY", into = c("name","notes","date1"), sep = ":")
   
   #user5 seperate on : nLoc, date, locations 
-  df1 <- df1 %>% separate(col = "USER5", into = c("nLoc", "date2", "loc1", "loc2"), sep = ":")
+  df1 <- df1 %>% separate(col = "NUM_PRESSED", into = c("nLoc", "date2", "loc1", "loc2"), sep = ":")
   # if loc > 1, some classification for seperating features 
   df2 <- df1 %>% separate(col = loc1, into = c("loc1", "loc2a"), sep = ",") %>%
     dplyr::mutate(

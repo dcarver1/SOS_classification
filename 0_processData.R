@@ -15,19 +15,27 @@ lapply(list.files("src", full.names = TRUE), source)
 ### 
 
 # read in data  -----------------------------------------------------------
-file <- "Mystery2_bg"
+file <- "BGBASE_Alaska"
 d1 <- readxl::read_excel(paste0("data/",file,".xlsx"))%>%
   dplyr::filter(!is.na(ACC_NUM))
+View(d1)
 
 # # read in bgbase with text fixes and use this as the input for classification 
 d2 <- readxl::read_excel("data/bgbase/bgBase_formated202209.xlsx")
 View(d2)
 d21 <- d2[d2$ACC_NUM %in% d1$ACC_NUM, ]
+View(d21)
 # 
 # 
 
+n1 <- names(d1)[names(d1) != names(d2)]
+
+
+
+
+
 # master table  --------------------------------------------------------
-masterTable  <- masterTable(d21)
+masterTable  <- masterTable(d1)
 
 
 # classify aspect ---------------------------------------------------------

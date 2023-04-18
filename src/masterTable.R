@@ -217,7 +217,7 @@ masterTable <- function(data){
   
 
   # format vouchers ---------------------------------------------------------
-  voucher <- processVoucher(data[,c("USER4", "USER5")])
+  voucher <- processVoucher(data[,c("IDENTIFIED_BY", "NUM_PRESSED")])
   
   ## "Voucher Date"                                                
   df$`Voucher Date` <- voucher$date
